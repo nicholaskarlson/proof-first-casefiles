@@ -1,1 +1,2 @@
+fixtures/input/case05_crlf_text_expected_fail/kit/inputs/left.csv -text
 * text=auto eol=lf
