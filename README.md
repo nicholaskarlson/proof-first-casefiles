@@ -100,3 +100,6 @@ See also:
 - `docs/CONTRACT.md`
 - `docs/CONVENTIONS.md`
 - `docs/HANDOFF.md`
+
+
+The book references **tags** (e.g. `book2-v1`) across all four repos, not moving `main` branches.
