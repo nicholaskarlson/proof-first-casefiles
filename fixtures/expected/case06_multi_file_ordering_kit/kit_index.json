@@ -1,0 +1,43 @@
+{
+  "title": "Deterministic Ordering (Many Files)",
+  "summary": "Multiple inputs with unsorted names; evidence output must be stable across OSes.",
+  "category": "determinism",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "6ddefd513161b316ac50eea197e95e944270627d2bd544925a0dba4bb8668f6e",
+      "bytes": 132
+    },
+    {
+      "path": "inputs/02.csv",
+      "sha256": "eeedcad97a0bc43e530a2b57610e3cea1ce47cf1f2a6bbd3baaeef146927d603",
+      "bytes": 4
+    },
+    {
+      "path": "inputs/1.csv",
+      "sha256": "6ff2d84956e507dade83da732a88aa6fa02712d03af8c515633f674de9fd42bd",
+      "bytes": 4
+    },
+    {
+      "path": "inputs/10.csv",
+      "sha256": "a6de7b0f6f2df16fa1f7af880986ed80fd0c3f60e6d017790606ea737dbd9ab8",
+      "bytes": 5
+    },
+    {
+      "path": "kit.json",
+      "sha256": "aef73346a01f2ac9520fa983e4437386dcc010a23faa6c6e4c9b3416f26b0fa5",
+      "bytes": 404
+    },
+    {
+      "path": "notes/a.txt",
+      "sha256": "87428fc522803d31065e7bce3cf03fe475096631e5e07bbd7a0fde60c4cf25c7",
+      "bytes": 2
+    },
+    {
+      "path": "notes/z.txt",
+      "sha256": "c865f6c5ab8d1b0bcd383a5e1e3879d22681c96bf462c269b7581d523fbe70ab",
+      "bytes": 2
+    }
+  ],
+  "total_bytes": 553
+}

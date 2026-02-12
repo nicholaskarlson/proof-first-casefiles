@@ -1,0 +1,28 @@
+{
+  "title": "Audit Pack Build (Deterministic Evidence)",
+  "summary": "Package a run's artifacts into a verifiable handoff manifest.",
+  "category": "auditpack",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5cb0294eeb0e04a594c9029b171e4f591d1ecca81771b0dbc21baa5c25deebda",
+      "bytes": 293
+    },
+    {
+      "path": "inputs/staging_issues.csv",
+      "sha256": "e4703d6ae9fcfdba05a65498e456c654d420625b73c9370763ef104ae2e06dd3",
+      "bytes": 21
+    },
+    {
+      "path": "inputs/staging_postings.csv",
+      "sha256": "9059ca156971c02b47720e452e16a0c7afde3db9f53577b5681402fdfd03a70f",
+      "bytes": 54
+    },
+    {
+      "path": "kit.json",
+      "sha256": "873ae0c87f975e04f456c5211fd5165849d1632fd3a6e49eba7cf4672c126d98",
+      "bytes": 395
+    }
+  ],
+  "total_bytes": 763
+}

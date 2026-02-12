@@ -1,0 +1,18 @@
+{
+  "title": "Audit Pack Build (Deterministic Evidence)",
+  "summary": "Package a run's artifacts into a verifiable handoff manifest.",
+  "category": "auditpack",
+  "env": {
+    "OUTPUT_BUCKET": "pf-drop-out"
+  },
+  "inputs": [
+    {
+      "path": "inputs/staging_postings.csv",
+      "role": "postings"
+    },
+    {
+      "path": "inputs/staging_issues.csv",
+      "role": "issues"
+    }
+  ]
+}

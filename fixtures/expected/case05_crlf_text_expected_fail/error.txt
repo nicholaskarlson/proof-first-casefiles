@@ -1,0 +1,1 @@
+CRLF line endings detected: inputs/left.csv

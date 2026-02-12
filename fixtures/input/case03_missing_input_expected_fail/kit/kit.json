@@ -1,0 +1,16 @@
+{
+  "title": "Missing Required Input (Expected-Fail)",
+  "summary": "Kit lists an input that isn't present; should fail deterministically.",
+  "category": "expected-fail",
+  "env": {},
+  "inputs": [
+    {
+      "path": "inputs/left.csv",
+      "role": "left"
+    },
+    {
+      "path": "inputs/right.csv",
+      "role": "right"
+    }
+  ]
+}

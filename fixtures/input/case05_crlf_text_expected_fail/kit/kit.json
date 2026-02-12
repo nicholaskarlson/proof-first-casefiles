@@ -1,0 +1,12 @@
+{
+  "title": "CRLF Text File (Expected-Fail)",
+  "summary": "Kit contains CRLF in a text-like file; should fail deterministically.",
+  "category": "expected-fail",
+  "env": {},
+  "inputs": [
+    {
+      "path": "inputs/left.csv",
+      "role": "left"
+    }
+  ]
+}

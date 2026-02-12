@@ -1,0 +1,18 @@
+{
+  "title": "Bank vs GL Reconciliation (Two CSVs)",
+  "summary": "Reconcile a bank export against the general ledger, producing a deterministic tie-out.",
+  "category": "recon",
+  "env": {
+    "RUN_ID": "demo"
+  },
+  "inputs": [
+    {
+      "path": "inputs/left_bank.csv",
+      "role": "left"
+    },
+    {
+      "path": "inputs/right_gl.csv",
+      "role": "right"
+    }
+  ]
+}

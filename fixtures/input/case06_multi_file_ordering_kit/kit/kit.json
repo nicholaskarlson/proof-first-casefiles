@@ -1,0 +1,20 @@
+{
+  "title": "Deterministic Ordering (Many Files)",
+  "summary": "Multiple inputs with unsorted names; evidence output must be stable across OSes.",
+  "category": "determinism",
+  "env": {},
+  "inputs": [
+    {
+      "path": "inputs/02.csv",
+      "role": "data"
+    },
+    {
+      "path": "inputs/10.csv",
+      "role": "data"
+    },
+    {
+      "path": "inputs/1.csv",
+      "role": "data"
+    }
+  ]
+}

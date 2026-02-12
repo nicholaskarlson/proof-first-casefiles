@@ -1,0 +1,14 @@
+{
+  "title": "Forbidden Secret Env Key (Expected-Fail)",
+  "summary": "Kit contains a secret-like env key; should fail deterministically.",
+  "category": "expected-fail",
+  "env": {
+    "API_TOKEN": "abc123"
+  },
+  "inputs": [
+    {
+      "path": "inputs/data.csv",
+      "role": "data"
+    }
+  ]
+}

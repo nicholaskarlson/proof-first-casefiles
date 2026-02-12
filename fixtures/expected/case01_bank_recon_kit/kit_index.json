@@ -1,0 +1,28 @@
+{
+  "title": "Bank vs GL Reconciliation (Two CSVs)",
+  "summary": "Reconcile a bank export against the general ledger, producing a deterministic tie-out.",
+  "category": "recon",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "94f134d112e10d375197cde717c80824d9b5144fbf2a54034ad8124c72136ff0",
+      "bytes": 317
+    },
+    {
+      "path": "inputs/left_bank.csv",
+      "sha256": "288356d032ac36040dbc879d86374a5f6c759cd6ef1b5687960b86a433ce3b89",
+      "bytes": 86
+    },
+    {
+      "path": "inputs/right_gl.csv",
+      "sha256": "df730b7b4e466b3fac45a45474b70a3a3c66b9882e3bd6dd0c5256f6d4b586fd",
+      "bytes": 108
+    },
+    {
+      "path": "kit.json",
+      "sha256": "8e1ae984b6de366eba4ca7ca22ab8f65a78d9bfd44fdb83cb8c60dff7b87a3ca",
+      "bytes": 379
+    }
+  ],
+  "total_bytes": 890
+}
