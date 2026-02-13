@@ -1,0 +1,36 @@
+{
+  "title": "Deploy Handoff Loop Kit (Render + Snapshot + Verify)",
+  "summary": "An end-to-end handoff loop: render receipts + a captured live snapshot + a deterministic verify report. Shows how to close the loop across the Book 2 suite.",
+  "category": "deploy",
+  "inputs": [
+    {
+      "path": "inputs/config.yaml",
+      "role": "pfdeploy config"
+    },
+    {
+      "path": "inputs/render/deploy_manifest.json",
+      "role": "rendered deploy manifest"
+    },
+    {
+      "path": "inputs/render/trigger_manifest.json",
+      "role": "rendered trigger manifest"
+    },
+    {
+      "path": "inputs/render/iam_manifest.json",
+      "role": "rendered IAM manifest"
+    },
+    {
+      "path": "inputs/render/manifest.sha256",
+      "role": "sha256 witness for render outputs"
+    },
+    {
+      "path": "inputs/snapshot/gcloud_service.json",
+      "role": "captured service snapshot (input to verify)"
+    },
+    {
+      "path": "inputs/verify/verify_report.json",
+      "role": "verify report (expected)"
+    }
+  ],
+  "env": {}
+}

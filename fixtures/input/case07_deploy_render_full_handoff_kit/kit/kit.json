@@ -1,0 +1,28 @@
+{
+  "title": "Deploy Render Handoff Kit (Full Config)",
+  "summary": "A client-ready deploy evidence bundle produced by proof-first-deploy-gcp (render). Includes config + deterministic manifests + sha256 witness.",
+  "category": "deploy",
+  "inputs": [
+    {
+      "path": "inputs/config.yaml",
+      "role": "pfdeploy config"
+    },
+    {
+      "path": "inputs/render/deploy_manifest.json",
+      "role": "rendered deploy manifest"
+    },
+    {
+      "path": "inputs/render/trigger_manifest.json",
+      "role": "rendered trigger manifest"
+    },
+    {
+      "path": "inputs/render/iam_manifest.json",
+      "role": "rendered IAM manifest"
+    },
+    {
+      "path": "inputs/render/manifest.sha256",
+      "role": "sha256 witness for render outputs"
+    }
+  ],
+  "env": {}
+}

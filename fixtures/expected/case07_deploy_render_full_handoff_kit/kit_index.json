@@ -1,0 +1,43 @@
+{
+  "title": "Deploy Render Handoff Kit (Full Config)",
+  "summary": "A client-ready deploy evidence bundle produced by proof-first-deploy-gcp (render). Includes config + deterministic manifests + sha256 witness.",
+  "category": "deploy",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "7cad4a575f81cc155b39abb3df20fac67f47512bd046b8599467d920b332c06f",
+      "bytes": 863
+    },
+    {
+      "path": "inputs/config.yaml",
+      "sha256": "8d59a79b2721ef45d3df7dc19fdd4be2999ff2a227f0d430ebc3ca3283561814",
+      "bytes": 679
+    },
+    {
+      "path": "inputs/render/deploy_manifest.json",
+      "sha256": "c8641a44738484c22a52affd7ad4a27b008359a1c657a7e2087f9811857df37d",
+      "bytes": 566
+    },
+    {
+      "path": "inputs/render/iam_manifest.json",
+      "sha256": "8c495e94ea0ae0fce13479c126cadc2eb27f0f136dc233c86b5c17c71c0a63be",
+      "bytes": 148
+    },
+    {
+      "path": "inputs/render/manifest.sha256",
+      "sha256": "b962ea53ad436d87885617980b0b9a32f3ecd7ceb4b2ad820ad9bc6953898414",
+      "bytes": 259
+    },
+    {
+      "path": "inputs/render/trigger_manifest.json",
+      "sha256": "145a8cd0604477cacda0d2b73f2aff7b06a0d6ced443443adb2b77fa11d7d2ca",
+      "bytes": 222
+    },
+    {
+      "path": "kit.json",
+      "sha256": "1c7b14e00230733b5b9922453ca9499a10297fdefddf95ea72277fbd04c9cb80",
+      "bytes": 776
+    }
+  ],
+  "total_bytes": 3513
+}

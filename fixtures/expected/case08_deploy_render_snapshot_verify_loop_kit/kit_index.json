@@ -1,0 +1,53 @@
+{
+  "title": "Deploy Handoff Loop Kit (Render + Snapshot + Verify)",
+  "summary": "An end-to-end handoff loop: render receipts + a captured live snapshot + a deterministic verify report. Shows how to close the loop across the Book 2 suite.",
+  "category": "deploy",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "4551a6fab4d32c2e0b603f05485d4bce1f7809f4a7c7ea34e6cbe1a7d6e51393",
+      "bytes": 1356
+    },
+    {
+      "path": "inputs/config.yaml",
+      "sha256": "02f9c7f07d25bda2036ece99dc7e1e2646810d19148eb266227298fa364f7e17",
+      "bytes": 435
+    },
+    {
+      "path": "inputs/render/deploy_manifest.json",
+      "sha256": "463aefd6f7455719bfda7ac59ec1823abe8435d6421a2317b6a54e3734a42987",
+      "bytes": 390
+    },
+    {
+      "path": "inputs/render/iam_manifest.json",
+      "sha256": "80445a7760948bdd6ea35aa4365f3479aa3db7a674193defab6cc457750865f6",
+      "bytes": 45
+    },
+    {
+      "path": "inputs/render/manifest.sha256",
+      "sha256": "005d86f4a93e7cafe7f2c2baad6d998f5f9bae7aea75eeda64613da78377e872",
+      "bytes": 259
+    },
+    {
+      "path": "inputs/render/trigger_manifest.json",
+      "sha256": "fd5825f8b14f665cd1c9d1a040efcdc4735b47350f933b52d0ed15fbc5c0d350",
+      "bytes": 168
+    },
+    {
+      "path": "inputs/snapshot/gcloud_service.json",
+      "sha256": "46e2597643e45994c151161090706dc55c98a217f2ef372f84a80e76bccc6d09",
+      "bytes": 189
+    },
+    {
+      "path": "inputs/verify/verify_report.json",
+      "sha256": "dc2ba689db6d3496d6e59015c5e90ada52eab114b0e48526959d9063fa18a02a",
+      "bytes": 209
+    },
+    {
+      "path": "kit.json",
+      "sha256": "36f28df5fcafacd2f0eb944331fdf8daa39e431acc1dada3e53d30e790619a4e",
+      "bytes": 1033
+    }
+  ],
+  "total_bytes": 4084
+}
