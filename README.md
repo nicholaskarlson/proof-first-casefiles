@@ -6,7 +6,7 @@ A casefile is a small, realistic data package plus a **proof gate** that recompu
 
 **Go baseline:** 1.22.x (CI witnesses ubuntu/macos/windows on 1.22.x, plus ubuntu “stable”).
 
-## Where this fits (Book 2)
+## Book 2 suite map
 
 This repo is designed to be used alongside the other Book 2 repos:
 
@@ -20,9 +20,9 @@ This repo is designed to be used alongside the other Book 2 repos:
 Run the proof gate:
 
 ```bash
-gofmt -w cmd internal
 make verify
-go test -count=1 ./...
+# (optional) Equivalent, if you want to run it directly:
+# go test -count=1 ./...
 ```
 
 Run the deterministic fixture demo (recomputes outputs and diffs against `fixtures/expected/**`):

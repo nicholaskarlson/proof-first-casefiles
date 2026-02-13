@@ -34,16 +34,24 @@ func cmdRender(args []string) int {
 	fs := flag.NewFlagSet("render", flag.ContinueOnError)
 	kitDir := fs.String("kit", "", "kit directory")
 	outDir := fs.String("out", "", "output directory")
-	_ = fs.Parse(args)
+	if err := fs.Parse(args); err != nil {
+		return 2
+	}
 	if *kitDir == "" || *outDir == "" {
 		return 2
 	}
 
-	_ = ResetOutDir(*outDir)
+	if err := ResetOutDir(*outDir); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		return 2
+	}
 
 	out, err := ProcessKit(*kitDir)
 	if err != nil {
-		_ = WriteText(filepath.Join(*outDir, "error.txt"), err.Error()+"\n")
+		if werr := WriteText(filepath.Join(*outDir, "error.txt"), err.Error()+"\n"); werr != nil {
+			fmt.Fprintln(os.Stderr, werr)
+			return 1
+		}
 		return 0
 	}
 
@@ -58,16 +66,24 @@ func cmdVerify(args []string) int {
 	fs := flag.NewFlagSet("verify", flag.ContinueOnError)
 	kitDir := fs.String("kit", "", "kit directory")
 	outDir := fs.String("out", "", "output directory")
-	_ = fs.Parse(args)
+	if err := fs.Parse(args); err != nil {
+		return 2
+	}
 	if *kitDir == "" || *outDir == "" {
 		return 2
 	}
 
-	_ = ResetOutDir(*outDir)
+	if err := ResetOutDir(*outDir); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		return 2
+	}
 
 	out, err := ProcessKit(*kitDir)
 	if err != nil {
-		_ = WriteText(filepath.Join(*outDir, "error.txt"), err.Error()+"\n")
+		if werr := WriteText(filepath.Join(*outDir, "error.txt"), err.Error()+"\n"); werr != nil {
+			fmt.Fprintln(os.Stderr, werr)
+			return 1
+		}
 		return 0
 	}
 
@@ -78,20 +94,32 @@ func cmdVerify(args []string) int {
 		TotalBytes: out.Index.TotalBytes,
 	}
 
-	b, _ := json.MarshalIndent(rep, "", "  ")
-	_ = WriteText(filepath.Join(*outDir, "verify_report.json"), string(b)+"\n")
+	b, err := json.MarshalIndent(rep, "", "  ")
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		return 1
+	}
+	if err := WriteText(filepath.Join(*outDir, "verify_report.json"), string(b)+"\n"); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		return 1
+	}
 	return 0
 }
 
 func cmdDemo(args []string) int {
 	fs := flag.NewFlagSet("demo", flag.ContinueOnError)
 	outBase := fs.String("out", "", "output directory")
-	_ = fs.Parse(args)
+	if err := fs.Parse(args); err != nil {
+		return 2
+	}
 	if *outBase == "" {
 		return 2
 	}
 
-	_ = ResetOutDir(*outBase)
+	if err := ResetOutDir(*outBase); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		return 2
+	}
 
 	cases, err := ListCases("fixtures/input")
 	if err != nil {
@@ -103,13 +131,22 @@ func cmdDemo(args []string) int {
 		inKit := filepath.Join("fixtures/input", c, "kit")
 		expDir := filepath.Join("fixtures/expected", c)
 		outDir := filepath.Join(*outBase, c)
-		_ = ResetOutDir(outDir)
+		if err := ResetOutDir(outDir); err != nil {
+			fmt.Fprintln(os.Stderr, err)
+			return 2
+		}
 
 		out, err := ProcessKit(inKit)
 		if err != nil {
-			_ = WriteText(filepath.Join(outDir, "error.txt"), err.Error()+"\n")
+			if werr := WriteText(filepath.Join(outDir, "error.txt"), err.Error()+"\n"); werr != nil {
+				fmt.Fprintln(os.Stderr, werr)
+				return 1
+			}
 		} else {
-			_ = WriteOutputs(outDir, out)
+			if werr := WriteOutputs(outDir, out); werr != nil {
+				fmt.Fprintln(os.Stderr, werr)
+				return 1
+			}
 		}
 
 		if err := DiffTrees(expDir, outDir); err != nil {
