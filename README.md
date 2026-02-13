@@ -89,6 +89,17 @@ For expected-fail (contract violations), the output is:
 go run ./cmd/pfcasefiles render --kit fixtures/input/caseXX_some_name/kit --out ./out/tmp
 ```
 
+### Included fixture kits
+
+- `case01_bank_recon_kit` — basic left/right CSV recon kit.
+- `case02_audit_pack_kit` — audit-pack bundle (postings + issues).
+- `case03_missing_input_expected_fail` — expected-fail: missing required input.
+- `case04_secret_envkey_expected_fail` — expected-fail: forbidden env key name (secrets).
+- `case05_crlf_text_expected_fail` — expected-fail: CRLF bytes in a text-like file.
+- `case06_multi_file_ordering_kit` — ordering demo across multiple files/folders.
+- `case07_deploy_render_full_handoff_kit` — **Repo B handoff**: render receipts + sha256 witness.
+- `case08_deploy_render_snapshot_verify_loop_kit` — **end-to-end loop**: render + snapshot + verify artifacts.
+
 3) Copy outputs into `fixtures/expected/caseXX_some_name/` and commit.
 4) Run the gate:
 
