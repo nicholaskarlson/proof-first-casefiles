@@ -13,5 +13,6 @@ demo:
 	mkdir -p ./out
 	go run ./cmd/pfcasefiles demo --out ./out
 
-verify: fmt test demo
+verify: test demo
 	@echo OK
+
