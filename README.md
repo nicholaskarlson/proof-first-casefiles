@@ -2,6 +2,12 @@
 
 Repo C (Book 2): **Freelancer engagement kits** (“casefiles”) with deterministic, verifiable handoffs.
 
+![ci](https://github.com/nicholaskarlson/proof-first-casefiles/actions/workflows/ci.yml/badge.svg)
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+> **Book:** *Proof-First Pipelines in the Cloud* (Book 2)  
+> This repo is **Repo C (Repo 4 of 4)**. The exact code referenced in the manuscript is tagged **[`book2-v1`](https://github.com/nicholaskarlson/proof-first-casefiles/tree/book2-v1)**.
+
 A casefile is a small, realistic data package plus a **proof gate** that recomputes evidence artifacts and compares them byte-for-byte to goldens.
 
 **Go baseline:** 1.22.x (CI witnesses ubuntu/macos/windows on 1.22.x, plus ubuntu “stable”).
@@ -10,10 +16,10 @@ A casefile is a small, realistic data package plus a **proof gate** that recompu
 
 This repo is designed to be used alongside the other Book 2 repos:
 
-- Anchor: `finance-pipeline-gcp` — deployable drop-folder workflow (trigger → run → artifacts → markers)
-- Repo A: `proof-first-event-contracts` — event parsing contract + fixtures/goldens + expected-fail
-- Repo B: `proof-first-deploy-gcp` — deterministic deploy evidence (render + verify) + fixtures/goldens
-- Repo C: `proof-first-casefiles` — engagement kits you can hand to a client (or use in teaching)
+- **[finance-pipeline-gcp](https://github.com/nicholaskarlson/finance-pipeline-gcp)** — anchor drop-folder workflow (trigger → run → artifacts → markers)
+- **[proof-first-event-contracts](https://github.com/nicholaskarlson/proof-first-event-contracts)** — event parsing contract + fixtures/goldens + expected-fail
+- **[proof-first-deploy-gcp](https://github.com/nicholaskarlson/proof-first-deploy-gcp)** — deterministic deploy evidence (render + verify) + fixtures/goldens
+- **[proof-first-casefiles](https://github.com/nicholaskarlson/proof-first-casefiles)** — engagement kits you can hand to a client (or use in teaching)
 
 ## Quickstart
 
@@ -111,6 +117,5 @@ See also:
 - `docs/CONTRACT.md`
 - `docs/CONVENTIONS.md`
 - `docs/HANDOFF.md`
-
 
 The book references **tags** (e.g. `book2-v1`) across all four repos, not moving `main` branches.
