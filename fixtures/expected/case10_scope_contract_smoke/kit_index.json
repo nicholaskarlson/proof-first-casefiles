@@ -1,0 +1,38 @@
+{
+  "title": "Scope Contract Smoke (Inputs + Contracts + Acceptance)",
+  "summary": "A small scope contract kit that locks acceptance boundaries and names-only review paths for the Book 4 fixture ladder.",
+  "category": "contract",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "4d2edac3f676a0f8344bf7427370cf068f915454d12574759fce304dd4e3b2e8",
+      "bytes": 1283
+    },
+    {
+      "path": "inputs/acceptance.md",
+      "sha256": "c89fa2e0cc363a6334d78114b07c9fec1c900df2d01334b0bfd4e909a3fbd85e",
+      "bytes": 644
+    },
+    {
+      "path": "inputs/fixture_map.md",
+      "sha256": "c199c3917d7ba2abef8de54bdcaa3e96b06f37396ae29a6cb60fffa96b1e1199",
+      "bytes": 943
+    },
+    {
+      "path": "inputs/review_paths.md",
+      "sha256": "9c71e2a34ac1e4a1faf3d63f723519b36ed55a4aeea5286dd2eef9cd4ae7db82",
+      "bytes": 778
+    },
+    {
+      "path": "inputs/scope_contract.json",
+      "sha256": "08996afbc0c0c96705c6b8d40bdfa5fbac69e27c1019cca5c000bd4c61d91eb6",
+      "bytes": 1465
+    },
+    {
+      "path": "kit.json",
+      "sha256": "0c7d768226db9a5f9555cead01bb2e6760148b61e5f0e0853385e463abe4745d",
+      "bytes": 621
+    }
+  ],
+  "total_bytes": 5734
+}

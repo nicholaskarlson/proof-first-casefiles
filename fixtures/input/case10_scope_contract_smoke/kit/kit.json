@@ -1,0 +1,27 @@
+{
+  "title": "Scope Contract Smoke (Inputs + Contracts + Acceptance)",
+  "summary": "A small scope contract kit that locks acceptance boundaries and names-only review paths for the Book 4 fixture ladder.",
+  "category": "contract",
+  "inputs": [
+    {
+      "path": "README.md",
+      "role": "guide"
+    },
+    {
+      "path": "inputs/scope_contract.json",
+      "role": "contract"
+    },
+    {
+      "path": "inputs/acceptance.md",
+      "role": "acceptance"
+    },
+    {
+      "path": "inputs/review_paths.md",
+      "role": "review"
+    },
+    {
+      "path": "inputs/fixture_map.md",
+      "role": "map"
+    }
+  ]
+}
