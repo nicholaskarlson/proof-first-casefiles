@@ -1,0 +1,32 @@
+{
+  "title": "Delivery Kit Smoke (Intake + Deploy + Backfill + Drift)",
+  "summary": "A small delivery_kit/ tree that ties together intake evidence (Repo C), deploy evidence (Repo B), backfill packs (Book 3), and one drift report.",
+  "category": "handoff",
+  "inputs": [
+    {
+      "path": "inputs/delivery_kit/README.md",
+      "role": "reviewer start-here"
+    },
+    {
+      "path": "inputs/delivery_kit/00-intake/manifest.sha256",
+      "role": "intake integrity witness"
+    },
+    {
+      "path": "inputs/delivery_kit/10-deploy/render/manifest.sha256",
+      "role": "deploy render integrity witness"
+    },
+    {
+      "path": "inputs/delivery_kit/20-backfill/pack_A/manifest.sha256",
+      "role": "pack A integrity witness"
+    },
+    {
+      "path": "inputs/delivery_kit/21-backfill/pack_B/manifest.sha256",
+      "role": "pack B integrity witness"
+    },
+    {
+      "path": "inputs/delivery_kit/30-drift/drift_report.json",
+      "role": "drift summary"
+    }
+  ],
+  "env": {}
+}
