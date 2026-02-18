@@ -1,0 +1,35 @@
+{
+  "title": "Book 4 Ch15 Graduation Smoke (End-to-End Proof Kit)",
+  "summary": "A names-only graduation kit that bundles the full receipt chain: contract → strict decode → plan → execution bundle → drift → deploy evidence → ops guardrails → change review.",
+  "category": "handoff",
+  "inputs": [
+    {"path": "README.md", "role": "overview"},
+    {"path": "inputs/acceptance.md", "role": "acceptance criteria"},
+    {"path": "inputs/review_paths.md", "role": "names-only review path"},
+    {"path": "inputs/graduation_kit/README.md", "role": "reviewer start-here"},
+    {"path": "inputs/graduation_kit/witness_matrix.md", "role": "what to run"},
+
+    {"path": "inputs/graduation_kit/00_contract/scope_contract.json", "role": "contract"},
+
+    {"path": "inputs/graduation_kit/10_event_contracts/event.json", "role": "event input"},
+    {"path": "inputs/graduation_kit/10_event_contracts/decision.json", "role": "decode decision"},
+    {"path": "inputs/graduation_kit/10_event_contracts/object_ref.json", "role": "object reference"},
+
+    {"path": "inputs/graduation_kit/20_backfills/cloud/cloud_plan.json", "role": "cloud plan receipt"},
+    {"path": "inputs/graduation_kit/21_backfills_pack/pack/pack_manifest.json", "role": "execution bundle (pack)"},
+    {"path": "inputs/graduation_kit/22_drift/diff/drift_report.json", "role": "drift report"},
+
+    {"path": "inputs/graduation_kit/30_deploy_render/manifest.sha256", "role": "deploy render witness"},
+    {"path": "inputs/graduation_kit/31_deploy_snapshot/manifest.sha256", "role": "deploy snapshot witness"},
+    {"path": "inputs/graduation_kit/32_deploy_verify/verify_report.json", "role": "deploy verify report"},
+
+    {"path": "inputs/graduation_kit/60_ops/ops_guardrails.json", "role": "ops guardrails"},
+    {"path": "inputs/graduation_kit/60_ops/alerts_runbook.md", "role": "alerts runbook"},
+
+    {"path": "inputs/graduation_kit/70_change_review/change_request.json", "role": "change request"},
+    {"path": "inputs/graduation_kit/70_change_review/risk_rollback.md", "role": "risk + rollback"},
+
+    {"path": "inputs/fixture_map.md", "role": "lineage"}
+  ],
+  "env": {}
+}

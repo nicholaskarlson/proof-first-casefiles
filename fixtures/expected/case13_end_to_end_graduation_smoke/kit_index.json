@@ -1,0 +1,213 @@
+{
+  "title": "Book 4 Ch15 Graduation Smoke (End-to-End Proof Kit)",
+  "summary": "A names-only graduation kit that bundles the full receipt chain: contract → strict decode → plan → execution bundle → drift → deploy evidence → ops guardrails → change review.",
+  "category": "handoff",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "2cddd0a1df1c033a115a26ee413bbfa98a435c2c252c0410f4fd5706bb777505",
+      "bytes": 237
+    },
+    {
+      "path": "inputs/acceptance.md",
+      "sha256": "8ecb969fc5307f750f6bcc5f4f21845179543fe5f2d25bc4c93bfbb52b982f5f",
+      "bytes": 724
+    },
+    {
+      "path": "inputs/fixture_map.md",
+      "sha256": "75561b1909bb0e100a8c6f927fa664c12e3030282aae1d47c83c964370d06176",
+      "bytes": 1059
+    },
+    {
+      "path": "inputs/graduation_kit/00_contract/scope_contract.json",
+      "sha256": "08996afbc0c0c96705c6b8d40bdfa5fbac69e27c1019cca5c000bd4c61d91eb6",
+      "bytes": 1465
+    },
+    {
+      "path": "inputs/graduation_kit/10_event_contracts/decision.json",
+      "sha256": "f3d1728924c3896ed06585a42a650b52d6c116954436b8244c23d3ac2db41d3a",
+      "bytes": 287
+    },
+    {
+      "path": "inputs/graduation_kit/10_event_contracts/event.json",
+      "sha256": "06addb2932e89988c5aaa6305ef064a709a597ccac0e8bbc3ba2abb156925ecf",
+      "bytes": 292
+    },
+    {
+      "path": "inputs/graduation_kit/10_event_contracts/object_ref.json",
+      "sha256": "955be9a46b282998b00946862e0de4d2c06878838c0b44816aa88794a1582fda",
+      "bytes": 97
+    },
+    {
+      "path": "inputs/graduation_kit/20_backfills/cloud/cloud_plan.json",
+      "sha256": "f7327e655aee5af1c190f2bea7448deefdee54bfb743a2ba9a8720ac5808b8ca",
+      "bytes": 2804
+    },
+    {
+      "path": "inputs/graduation_kit/20_backfills/cloud/manifest.sha256",
+      "sha256": "a9cee260fbe2c93cc68a155c15e4b84bb64f0dc5fe35a7794f3fa4d9431df27a",
+      "bytes": 82
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/apply/batch_report.json",
+      "sha256": "2aa3f861f4af68e36674d3fbca5e0e82855affa0a135a3bfb95531b65fff52be",
+      "bytes": 589
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/apply/manifest.sha256",
+      "sha256": "69333b6ba120a432a1c622eab38d264920c974aa0fd5ef5007ec2aeed6651ebf",
+      "bytes": 84
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/local/local_diff.json",
+      "sha256": "d3f143437b05daf22fffff6824cdc25b51a287ce13e6b3dbf25147ec6bfbe2ef",
+      "bytes": 571
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/local/local_report.json",
+      "sha256": "332aa817476ad290ed6170c8e39230ab540f0dd395f153ba61b6565e74da47e8",
+      "bytes": 299
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/local/manifest.sha256",
+      "sha256": "cceb80a0ba2ab8af8d62131483177ec52530ad6f02957be453776a2d29da3ee3",
+      "bytes": 518
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/local/runs/runA/done.json",
+      "sha256": "b73a834db8b857ec62b489db8ababfbafbbb2648e6fa2d66c34e4e3c0e9e1179",
+      "bytes": 128
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/local/runs/runA/run_meta.json",
+      "sha256": "adbe042f542a3968e39d9002eff1cc8d85ee7f6c425565beac1a5e47fe31bc76",
+      "bytes": 184
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/local/runs/runB/done.json",
+      "sha256": "6ac3fb98e52fd4f895b1039dd9b295d2e413ca5d71932655d9d22d9cad94abdf",
+      "bytes": 128
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/local/runs/runB/run_meta.json",
+      "sha256": "9ddfd5984b46df7c6a148a5a48227acefcf9bbe5085ea5133618858b9a1289b7",
+      "bytes": 182
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/manifest.sha256",
+      "sha256": "1c9e0d47c60e335d9b21fbdeb7426ce1405a03155b473404370b9873f4d9f6c6",
+      "bytes": 1263
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/pack_manifest.json",
+      "sha256": "1b023cd0f5d2cd79b765bbe5452b263c086cedec8b7ccbd7b82684cd4eed942c",
+      "bytes": 684
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/plan/manifest.sha256",
+      "sha256": "79eecaee6b88062fe0e494e6c77c8ebbeb128f3ce452f2837b8087c3c12dae96",
+      "bytes": 85
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/plan/plan_manifest.json",
+      "sha256": "35bcb0d9eb0d11fa0cacb0393e5d3e6b063a9a9cf884d661c058eae0336c7249",
+      "bytes": 429
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/verify/manifest.sha256",
+      "sha256": "2b99ffc8c13954b69123249e8014b8447124f77dc55d17a9427314de0a018030",
+      "bytes": 85
+    },
+    {
+      "path": "inputs/graduation_kit/21_backfills_pack/pack/verify/verify_report.json",
+      "sha256": "5ff2ef6aefaea21443886c2dd698a2fcfe230221634fddb73aadde674785ed9c",
+      "bytes": 679
+    },
+    {
+      "path": "inputs/graduation_kit/22_drift/diff/drift_report.json",
+      "sha256": "0ea727a6832cc3f39faa4f2285e2667699332b654c6a98e7b7564f2e366bf214",
+      "bytes": 285
+    },
+    {
+      "path": "inputs/graduation_kit/22_drift/diff/manifest.sha256",
+      "sha256": "cab174af39f18487f3bdf61ad1deb47adba7f8ded43eba10e4bb6580e0d6ab35",
+      "bytes": 84
+    },
+    {
+      "path": "inputs/graduation_kit/30_deploy_render/deploy_manifest.json",
+      "sha256": "dd5ca40948b1880267bdd0f7b9f5d76820f6652695071f703102c54707aa034d",
+      "bytes": 399
+    },
+    {
+      "path": "inputs/graduation_kit/30_deploy_render/iam_manifest.json",
+      "sha256": "80445a7760948bdd6ea35aa4365f3479aa3db7a674193defab6cc457750865f6",
+      "bytes": 45
+    },
+    {
+      "path": "inputs/graduation_kit/30_deploy_render/manifest.sha256",
+      "sha256": "1328279a2a65a34723b37307c341f7130d012ec67199c703dba6fa618a9be47c",
+      "bytes": 259
+    },
+    {
+      "path": "inputs/graduation_kit/30_deploy_render/trigger_manifest.json",
+      "sha256": "77620af81ee026001f59d1065edcb2eaeb695916ffe655b2bdc7319369a3e130",
+      "bytes": 221
+    },
+    {
+      "path": "inputs/graduation_kit/31_deploy_snapshot/gcloud_service.json",
+      "sha256": "3d7ddad2cabd44092efb5d77f41808872d667f626c0b8a8e10573d72f74e8372",
+      "bytes": 195
+    },
+    {
+      "path": "inputs/graduation_kit/31_deploy_snapshot/manifest.sha256",
+      "sha256": "6373835be7270da1b7a64f847491b0ae13bbafe41f64784f215d3a4a23ce79e6",
+      "bytes": 86
+    },
+    {
+      "path": "inputs/graduation_kit/32_deploy_verify/verify_report.json",
+      "sha256": "dc2ba689db6d3496d6e59015c5e90ada52eab114b0e48526959d9063fa18a02a",
+      "bytes": 209
+    },
+    {
+      "path": "inputs/graduation_kit/60_ops/alerts_runbook.md",
+      "sha256": "b7769f130b80f5a2a23b6dd5f7a5408578c58b69fc911480b26ccc2d9e43b9c0",
+      "bytes": 963
+    },
+    {
+      "path": "inputs/graduation_kit/60_ops/ops_guardrails.json",
+      "sha256": "13b912855ff4e661a55c47deb10bde9cd98ec197f0ad0abcfb6089b4bce61904",
+      "bytes": 1363
+    },
+    {
+      "path": "inputs/graduation_kit/70_change_review/change_request.json",
+      "sha256": "092a452e20e3b9cabd03770689b9ac48b328768125282b097e0e9e75a8adc86a",
+      "bytes": 1438
+    },
+    {
+      "path": "inputs/graduation_kit/70_change_review/risk_rollback.md",
+      "sha256": "18fda8239df3fd86b8a8b90899747553367080a7e64960c3b6188991f69247bb",
+      "bytes": 797
+    },
+    {
+      "path": "inputs/graduation_kit/README.md",
+      "sha256": "8bc67c86c54853085c3e0d6d713f130a41fcd8faf41ce28fc14720b41c115ccc",
+      "bytes": 411
+    },
+    {
+      "path": "inputs/graduation_kit/witness_matrix.md",
+      "sha256": "4ec37a2df5365c0419c5063d5204393d48f306c4a6a3fae6a97984e640e14e46",
+      "bytes": 548
+    },
+    {
+      "path": "inputs/review_paths.md",
+      "sha256": "a529b9ccad40559b657dbbb1b2639c3fb9be9c83428e4c8c014e5905b7c1b6bf",
+      "bytes": 1247
+    },
+    {
+      "path": "kit.json",
+      "sha256": "87f33af784024465896af7e55a5afb00d893b1ba68d827d8505c3ec3c0150a70",
+      "bytes": 2150
+    }
+  ],
+  "total_bytes": 23655
+}

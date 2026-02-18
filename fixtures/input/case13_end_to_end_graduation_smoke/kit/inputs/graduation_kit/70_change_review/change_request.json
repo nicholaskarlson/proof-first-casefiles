@@ -1,0 +1,35 @@
+{
+  "change_id": "book4-ch13-case12-change_review_kit_smoke",
+  "title": "Change review kit fixture: case12_change_review_kit_smoke",
+  "why": "Demonstrate a deterministic, names-only change review workflow: intent + acceptance + risk/rollback + fixture map, rendered into receipts a reviewer can verify byte-for-byte.",
+  "scope": {
+    "in_scope": [
+      "Add a new casefile kit under fixtures/input/case12_change_review_kit_smoke/kit/",
+      "Commit the rendered receipts under fixtures/expected/case12_change_review_kit_smoke/"
+    ],
+    "out_of_scope": [
+      "No behavioral changes to pfcasefiles runtime",
+      "No new fixture naming scheme (case name is locked by Book 4 fixture naming lock)"
+    ]
+  },
+  "review_questions": [
+    "Do the names-only review paths cover the full decision surface for this change?",
+    "Are acceptance criteria measurable and verifiable with the proof gate?",
+    "Is rollback explicit and safe?"
+  ],
+  "proof": {
+    "proof_gate": "make verify",
+    "fixtures": [
+      "fixtures/input/case12_change_review_kit_smoke/kit/",
+      "fixtures/expected/case12_change_review_kit_smoke/"
+    ],
+    "expected_receipts": [
+      "kit_index.json",
+      "manifest.sha256"
+    ]
+  },
+  "notes": {
+    "determinism": "All outputs are ordered, sha256-witnessed, and LF-only text.",
+    "review_style": "Names-only: start at kit_index.json + manifest.sha256, then inspect only listed artifacts."
+  }
+}
