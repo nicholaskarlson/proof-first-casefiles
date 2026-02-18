@@ -1,0 +1,43 @@
+{
+  "title": "Change Review Kit Smoke (PR Checklist + Risk + Rollback)",
+  "summary": "A small change-review kit that turns a PR into a reviewable receipt: what changed, why, how to verify, risks/rollback, and names-only review paths (Book 4 Ch13).",
+  "category": "change",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "683adb2a2c0828fb75c9abcacfb51240c6d6c6f3f8a9eb36a4dc6ec140f7957d",
+      "bytes": 1784
+    },
+    {
+      "path": "inputs/acceptance.md",
+      "sha256": "822b0d496e749aa9aefc973a114db8d260ff6ecdd074229ed7fb9c3bb88c37e6",
+      "bytes": 590
+    },
+    {
+      "path": "inputs/change_request.json",
+      "sha256": "092a452e20e3b9cabd03770689b9ac48b328768125282b097e0e9e75a8adc86a",
+      "bytes": 1438
+    },
+    {
+      "path": "inputs/fixture_map.md",
+      "sha256": "42564976f566c72948f31561a7f3de633d87926cc55d6b78dd8d2cc4386ecb7e",
+      "bytes": 583
+    },
+    {
+      "path": "inputs/review_paths.md",
+      "sha256": "109e96f80dcba92e40cc89fdfe8542ca2137ddf5084ca08801d054f114dab30a",
+      "bytes": 682
+    },
+    {
+      "path": "inputs/risk_rollback.md",
+      "sha256": "18fda8239df3fd86b8a8b90899747553367080a7e64960c3b6188991f69247bb",
+      "bytes": 797
+    },
+    {
+      "path": "kit.json",
+      "sha256": "bcd30666e32cae3718d2279c6ec12a3ceb486df18f35f67b2cded1b64a815f3f",
+      "bytes": 762
+    }
+  ],
+  "total_bytes": 6636
+}
