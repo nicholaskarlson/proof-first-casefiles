@@ -108,6 +108,7 @@ go run ./cmd/pfcasefiles render --kit fixtures/input/caseXX_some_name/kit --out 
 - `case09_delivery_kit_smoke` — **shipping-shaped** delivery_kit/ tree: intake + deploy + backfill packs + drift.
 - `case10_scope_contract_smoke` — scope contract smoke: acceptance boundaries + names-only review paths + fixture map.
 - `case11_ops_guardrails_smoke` — ops guardrails smoke: budgets + limits + timeouts/retries + alert routing.
+- `case12_change_review_kit_smoke` — change review kit smoke: intent + acceptance + risk/rollback + names-only review paths.
 
 3) Copy outputs into `fixtures/expected/caseXX_some_name/` and commit.
 4) Run the gate:

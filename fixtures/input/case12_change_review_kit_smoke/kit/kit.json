@@ -1,0 +1,31 @@
+{
+  "title": "Change Review Kit Smoke (PR Checklist + Risk + Rollback)",
+  "summary": "A small change-review kit that turns a PR into a reviewable receipt: what changed, why, how to verify, risks/rollback, and names-only review paths (Book 4 Ch13).",
+  "category": "change",
+  "inputs": [
+    {
+      "path": "README.md",
+      "role": "guide"
+    },
+    {
+      "path": "inputs/change_request.json",
+      "role": "change_request"
+    },
+    {
+      "path": "inputs/acceptance.md",
+      "role": "acceptance"
+    },
+    {
+      "path": "inputs/risk_rollback.md",
+      "role": "runbook"
+    },
+    {
+      "path": "inputs/review_paths.md",
+      "role": "review_paths"
+    },
+    {
+      "path": "inputs/fixture_map.md",
+      "role": "fixture_map"
+    }
+  ]
+}
