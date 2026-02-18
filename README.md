@@ -107,6 +107,7 @@ go run ./cmd/pfcasefiles render --kit fixtures/input/caseXX_some_name/kit --out 
 - `case08_deploy_render_snapshot_verify_loop_kit` — **end-to-end loop**: render + snapshot + verify artifacts.
 - `case09_delivery_kit_smoke` — **shipping-shaped** delivery_kit/ tree: intake + deploy + backfill packs + drift.
 - `case10_scope_contract_smoke` — scope contract smoke: acceptance boundaries + names-only review paths + fixture map.
+- `case11_ops_guardrails_smoke` — ops guardrails smoke: budgets + limits + timeouts/retries + alert routing.
 
 3) Copy outputs into `fixtures/expected/caseXX_some_name/` and commit.
 4) Run the gate:

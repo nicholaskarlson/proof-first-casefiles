@@ -1,0 +1,31 @@
+{
+  "title": "Ops Guardrails Smoke (Budgets + Limits + Alerts)",
+  "summary": "A small ops guardrails kit that locks cost ceilings, blast-radius limits, retry/timeout policy, and alert routing as reviewable receipts (Book 4 Ch12).",
+  "category": "ops",
+  "inputs": [
+    {
+      "path": "README.md",
+      "role": "guide"
+    },
+    {
+      "path": "inputs/ops_guardrails.json",
+      "role": "guardrails contract"
+    },
+    {
+      "path": "inputs/alerts_runbook.md",
+      "role": "runbook"
+    },
+    {
+      "path": "inputs/acceptance.md",
+      "role": "acceptance"
+    },
+    {
+      "path": "inputs/review_paths.md",
+      "role": "review"
+    },
+    {
+      "path": "inputs/fixture_map.md",
+      "role": "map"
+    }
+  ]
+}

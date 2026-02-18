@@ -1,0 +1,43 @@
+{
+  "title": "Ops Guardrails Smoke (Budgets + Limits + Alerts)",
+  "summary": "A small ops guardrails kit that locks cost ceilings, blast-radius limits, retry/timeout policy, and alert routing as reviewable receipts (Book 4 Ch12).",
+  "category": "ops",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "ee00fcddbed16402bf1f7473dab7509749cf4e84891fd9765ecc67d952fac89a",
+      "bytes": 1123
+    },
+    {
+      "path": "inputs/acceptance.md",
+      "sha256": "a05a3c21f62f37dccb637f92be28a7d09b73a65be92991b81f8208965daf30fd",
+      "bytes": 638
+    },
+    {
+      "path": "inputs/alerts_runbook.md",
+      "sha256": "b7769f130b80f5a2a23b6dd5f7a5408578c58b69fc911480b26ccc2d9e43b9c0",
+      "bytes": 963
+    },
+    {
+      "path": "inputs/fixture_map.md",
+      "sha256": "a81422ec7da0da68db2784b74ed2c9dfd4663738358a21643228c9ae189eb0b9",
+      "bytes": 1169
+    },
+    {
+      "path": "inputs/ops_guardrails.json",
+      "sha256": "13b912855ff4e661a55c47deb10bde9cd98ec197f0ad0abcfb6089b4bce61904",
+      "bytes": 1363
+    },
+    {
+      "path": "inputs/review_paths.md",
+      "sha256": "685cc52db3b7129bf39071f3822cc3a5333aba95b000391d691d39c3114b27e1",
+      "bytes": 707
+    },
+    {
+      "path": "kit.json",
+      "sha256": "0b1b5dc13ca8fb7014796fb68a012923261709b93e1ecaa0d37347e176bcd87e",
+      "bytes": 733
+    }
+  ],
+  "total_bytes": 6696
+}
