@@ -1,0 +1,66 @@
+{
+  "service": "proof-first-backfills-gcp",
+  "environment": "consulting-demo",
+  "guardrails": {
+    "cost": {
+      "daily_budget_usd": 5.00,
+      "monthly_budget_usd": 50.00,
+      "stop_the_bleed_threshold_usd": 2.50,
+      "action_on_threshold": "pause_new_runs_and_open_change_review"
+    },
+    "limits": {
+      "max_concurrent_runs": 1,
+      "max_objects_per_run": 2,
+      "max_object_bytes": 1048576,
+      "allowed_prefixes": [
+        "drop/",
+        "packs/"
+      ]
+    },
+    "timeouts": {
+      "render_seconds": 15,
+      "apply_seconds": 60,
+      "verify_seconds": 30
+    },
+    "retries": {
+      "max_attempts": 3,
+      "backoff_seconds": [
+        1,
+        2,
+        4
+      ],
+      "retry_on": [
+        "transient_network_error",
+        "gcs_5xx"
+      ],
+      "do_not_retry_on": [
+        "schema_violation",
+        "manifest_mismatch",
+        "forbidden_object_key"
+      ]
+    },
+    "alerts": {
+      "severity_levels": [
+        "info",
+        "warn",
+        "page"
+      ],
+      "page_on": [
+        "budget_threshold",
+        "manifest_mismatch",
+        "verify_mismatch"
+      ],
+      "notify_channels": [
+        "email:oncall@example.invalid",
+        "ticket:ops-backlog"
+      ]
+    }
+  },
+  "review": {
+    "names_only": true,
+    "start_here": [
+      "kit_index.json",
+      "manifest.sha256"
+    ]
+  }
+}

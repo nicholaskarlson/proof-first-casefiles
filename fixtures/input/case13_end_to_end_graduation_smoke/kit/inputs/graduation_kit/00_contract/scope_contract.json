@@ -1,0 +1,39 @@
+{
+  "project": "Proof-First Book 4",
+  "fixture_case": "case10_scope_contract_smoke",
+  "intent": "Lock scope, acceptance, and reviewer paths before infrastructure work.",
+  "proof_gate": "make verify",
+  "repos_in_series": [
+    "proof-first-casefiles",
+    "proof-first-event-contracts",
+    "proof-first-deploy-gcp",
+    "proof-first-backfills-gcp",
+    "finance-pipeline-gcp",
+    "proof-first-recon",
+    "proof-first-auditpack",
+    "proof-first-normalizer",
+    "proof-first-finance-calc"
+  ],
+  "determinism_rules": [
+    "LF-only line endings for text-like files",
+    "stable path ordering (sorted walks)",
+    "byte-for-byte goldens checked by the proof gate",
+    "expected-fail fixtures are first-class receipts (single error.txt)"
+  ],
+  "acceptance_boundaries": [
+    "Each chapter milestone is one PR that adds exactly that chapter\u2019s fixture(s).",
+    "No placeholder case names in manuscript or fixtures.",
+    "A reviewer can verify the delta by inspecting names-only paths and running make verify.",
+    "The fixture ladder produces deterministic receipts (kit_index.json + manifest.sha256)."
+  ],
+  "non_goals": [
+    "No cloud credentials or secrets inside fixtures (no secrets rule).",
+    "No implicit behavior: contracts must be explicit and reviewable.",
+    "No multi-chapter PRs."
+  ],
+  "review_strategy": {
+    "policy": "names-only",
+    "paths_doc": "inputs/review_paths.md",
+    "fixture_map_doc": "inputs/fixture_map.md"
+  }
+}
