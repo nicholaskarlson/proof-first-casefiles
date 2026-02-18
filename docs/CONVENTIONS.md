@@ -10,7 +10,8 @@ These conventions exist so the repo can *prove* its outputs: deterministic artif
 Artifacts produced by this repo are deterministic:
 - file lists are sorted
 - JSON output is stable (`json.MarshalIndent`) and ends with a trailing newline
-- `manifest.sha256` uses sorted paths and sha256 over raw bytes
+- `kit_index.json` lists files in sorted path order
+- `manifest.sha256` hashes raw file bytes; each line is `SHA256␠␠path` and lines are sorted lexicographically (sha-first)
 - no timestamps, UUIDs, random IDs, or host-specific paths embedded into artifacts
 
 ## Atomic writes

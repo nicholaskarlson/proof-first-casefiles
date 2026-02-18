@@ -49,7 +49,8 @@ All text outputs end with a trailing newline.
 4) **Deterministic artifacts**  
    - file lists are sorted
    - JSON output is stable (`json.MarshalIndent`) + trailing newline
-   - `manifest.sha256` uses sorted paths and sha256 over raw bytes
+   - `kit_index.json` lists files in sorted path order
+   - `manifest.sha256` hashes raw file bytes; each line is `SHA256␠␠path` and lines are sorted lexicographically (sha-first)
 
 ## CLI semantics (important for automation)
 
